@@ -1,0 +1,23 @@
+{
+  "name": "much-about-windbreakers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/input.css -o dist/input.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamoflage/much-about-windbreakers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamoflage/much-about-windbreakers/issues"
+  },
+  "homepage": "https://github.com/kamoflage/much-about-windbreakers#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

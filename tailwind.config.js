@@ -1,10 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-{import('tailwindcss').Config}
-
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
+    colors:{
+        'gray-dark': '#273444',
+        'gray': '#8492a6',
+        'gray-light': '#d3dce6',
+    }
+
+    font-family:{
+        sans: ['Ariel', 'san-serif']
+    }
+
+    extend: {
+
+    },
   },
   plugins: [],
+  prefix: 'tw-';
 }
