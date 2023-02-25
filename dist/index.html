@@ -3,16 +3,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="input.css" rel="stylesheet">
+        <link href="tailwind.config.js" rel="javasheet">
     </head>
     <body>
         <header>
             <nav>
-                <div class="top-block">
+                <div >
                     <tr>
                         <th class="alignleft" href="#">Subscribe</th>
-                        <th align="center"><strong>Large</strong></th>
-                        <th class="alignright" href="#">Search</th>
-                        <th class="alignright" href="#">Sign up</th>
+                        <th><a href="#" class="middletext">Large</a></th>
+                        <th><button class="alignright" href="#">Sign up</button></th>
+                        <th><button class="alignright" href="#">Search</button></th>
                     </tr>
                 </div>
                 <hr>
@@ -21,56 +22,57 @@
 
         <div>
             <nav class="options">
-                <tr>
-                    <th><a href="#">World</a></th>
-                    <th><a href="#">U.S</a></th>
-                    <th><a href="#">Technology</a></th>
-                    <th><a href="#">Design</a></th>
-                    <th><a href="#">Culture</a></th>
-                    <th><a href="#">Business</a></th>
-                    <th><a href="#">Politics</a></th>
-                    <th><a href="#">Opinion</a></th>
-                    <th><a href="#">Science</a></th>
-                    <th><a href="#">Health</a></th>
-                    <th><a href="#">Style</a></th>
-                    <th><a href="#">Travel</a></th>
-                </tr>
-
+                    <a href="#">World</a>
+                    <a href="#">U.S</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Design</a>
+                    <a href="#">Culture</a>
+                    <a href="#">Business</a>
+                    <a href="#">Politics</a>
+                    <a href="#">Opinion</a>
+                    <a href="#">Science</a>
+                    <a href="#">Health</a>
+                    <a href="#">Style</a>
+                    <a href="#">Travel</a>
             </nav>
         </div>
 
-        <div class="text-white rounded bg-dark">
-            <h1>Title of a longer featured blog post</h1>
+        <div class="add-border">
+            <h1 class="title"><em>Title of a longer featured blog post</em></h1>
             <p>Multiple lines of text that form lede, informing new readers quickly</p>
-            <a>Continue reading...</a>
+            <a href="#">Continue reading...</a>
         </div>
+
         <br>
-        <div>
-            <p><strong>World</strong></p>
-            <h3>Featured post</h3>
+        <div class="blocks">
+        <div class="left-block">
+            <h3>World</h3>
+            <h2>Featured post</h2>
             <date>Nov 12</date>
             <p>This is a wider card with supporting text below as a
                 natural lead-in to additional content.
             </p>
-            <a>Continue reading</a>
+            <a href="#">Continue reading</a>
         </div>
-        <br>
-        <div>
+
+        <div class="right-block">
             <p><strong>Design</strong></p>
             <h3>Post title</h3>
             <date>Nov 11</date>
             <p>This is a wider card with supporting text below as a
                 natural lead-in to additional content.
             </p>
-            <a>Continue reading</a>
+            <a href="#">Continue reading</a>
         </div>
+        </div>
+
         <div class="body-content">
             <h3>From the Firehouse</h3>
         </div>
         <hr>
         <article>
             <h2>Sample blog post</h2>
-            <date>January 1, 2021 by <a>Mark</a></date>
+            <date>January 1, 2021 by <a href="#">Mark</a></date>
             <p>This blog post shows a few different types of content
                 that's supported and styled with Bootstrap. Basic
                 typography, lists, tables, images, code, and  more
@@ -98,21 +100,28 @@
                     The programming language used to build advanced Websites and applications
                 </dd>
             </dl>
+            <span>
             <h2>Inline HTML elements</h2>
-            <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a>Mozilla Developer Network</a>
+            <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="#">Mozilla Developer Network</a>
             </p>
             <ul>
-                <li><strong>To bold text</strong>, use <strong>strong</strong>. </li>
-                <li><em>To italisize text</em>, use <strong>em</strong>. </li>
-                <li>Abbreviations, like <abbr>HTML</abbr> should use <strong>abbr</strong>, with an optional title attribute for the full phrase.</li>
-                <li>Citations, like — <cite>Mark Otto</cite>, should use <strong>cite</strong>. </li>
-                <li><del>text</del> should use <strong>del</strong> and <ins>inserted</ins> text should use <strong>ins</strong>.</li>
-                <li>Superscript <sup>text</sup> uses <strong>sup</strong> and subscript <sub>text</sub> uses <strong>sub</strong>. </li>
+                <li><strong>To bold text</strong>, use <code>strong</code>. </li>
+
+                <li><em>To italisize text</em>, use <code>em</code>. </li>
+
+                <li>Abbreviations, like <abbr>HTML</abbr> should use <code>abbr</code>, with an optional title attribute for the full phrase.</li>
+
+                <li>Citations, like — <cite>Mark Otto</cite>, should use <code>cite</code>. </li>
+
+                <li><del>text</del> should use <code>del</code> and <ins>inserted</ins> text should use <code>ins</code>.</li>
+
+                <li>Superscript <sup>text</sup> uses <code>sup</code> and subscript <sub>text</sub> uses <code>sub</code>. </li>
             </ul>
+            </span>
         </article>
         <div class="side-bar-content">
-            <p><strong>About</strong></p>
-            
+            <h3><strong>See other languages</strong></h3>
+            <p>Here are more languages that you can indulge in and other web application frameworks you can use to create beautiful websites.</p>
         </div>
 
     </body>
